@@ -29,5 +29,5 @@ target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
 target1.width=90
-target1.x=256
-target1.y=44
+target1.x=100
+target1.y=10

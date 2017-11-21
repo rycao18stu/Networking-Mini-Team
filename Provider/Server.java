@@ -1,12 +1,12 @@
 import java.io.*;
 import java.net.*;
-public class Provider{
+public class Server{
     ServerSocket providerSocket;
     Socket connection = null;
     ObjectOutputStream out;
     ObjectInputStream in;
     String message;
-    Provider(){}
+    Server(){}
     void run()
     {
         try{
@@ -62,7 +62,7 @@ public class Provider{
     }
     public static void main(String args[])
     {
-        Provider server = new Provider();
+        Server server = new Server();
         while(true){
             server.run();
         }
