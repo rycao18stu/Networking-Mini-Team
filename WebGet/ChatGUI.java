@@ -25,6 +25,7 @@ public class ChatGUI implements ActionListener, Runnable{
     JButton submit;
     OutputStream out;
     InputStream in;
+    Socket s;
     public ChatGUI() {
         this.frame = new JFrame("ChatGUI");
         this.display = new JTextArea(50, 50);
@@ -39,6 +40,7 @@ public class ChatGUI implements ActionListener, Runnable{
         this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.frame.setVisible(true);
         this.frame.setSize(new Dimension(1000, 1000));
+        this.s = new Socket(
     }
     
     public static void main(String[] args) {
